@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Coffee Catalog-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="logInViewController" customModule="CoffeeCatalog" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,37 +17,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nY5-sV-gGj">
-                                <rect key="frame" x="30" y="381" width="354" height="84"/>
+                                <rect key="frame" x="30" y="433" width="354" height="84"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6l-Gg-Hmr">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartInsertDeleteType="no" textContentType="username"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZ2-dJ-ubz">
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZ2-dJ-ubz">
                                         <rect key="frame" x="0.0" y="50" width="354" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-Qi-RGM">
-                                <rect key="frame" x="165.5" y="509" width="83" height="48"/>
+                                <rect key="frame" x="165.5" y="561" width="83" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Войти"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hz9-aC-Gd7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-xa-L6l">
+                                <rect key="frame" x="153" y="629" width="108" height="30"/>
+                                <state key="normal" title="Забыл пароль?">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6LX-yl-nBq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="Q8C-Qi-RGM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4hi-m4-L0d"/>
                             <constraint firstItem="Q8C-Qi-RGM" firstAttribute="top" secondItem="nY5-sV-gGj" secondAttribute="bottom" constant="44" id="BEB-YB-4uS"/>
+                            <constraint firstItem="3P4-xa-L6l" firstAttribute="top" secondItem="Q8C-Qi-RGM" secondAttribute="bottom" constant="20" id="CQi-tY-vmV"/>
                             <constraint firstItem="nY5-sV-gGj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="293" id="cFw-TJ-gPz"/>
+                            <constraint firstItem="3P4-xa-L6l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f9W-B2-de3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nY5-sV-gGj" secondAttribute="trailing" constant="30" id="kGs-ud-2HS"/>
                             <constraint firstItem="nY5-sV-gGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="yba-gG-7W1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Coffee Catalog" id="j0Q-cz-rRM"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="j0Q-cz-rRM"/>
+                    <connections>
+                        <outlet property="logInButton" destination="Q8C-Qi-RGM" id="JTF-GH-nCs"/>
+                        <outlet property="loginTF" destination="q6l-Gg-Hmr" id="Wjs-dP-w5m"/>
+                        <outlet property="passwordTF" destination="aZ2-dJ-ubz" id="jui-9f-HdH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,8 +79,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kJl-Yw-Li8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pOd-ze-G5p">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pOd-ze-G5p">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -75,6 +96,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
