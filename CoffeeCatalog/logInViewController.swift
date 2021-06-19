@@ -17,10 +17,17 @@ class logInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginTF.delegate = self
-        passwordTF.delegate = self
         self.view.addBackground()
         
+        loginTF.delegate = self
+        loginTF.layer.cornerRadius = 15
+        loginTF.layer.masksToBounds = true
+        
+        passwordTF.delegate = self
+        passwordTF.layer.cornerRadius = 15
+        passwordTF.layer.masksToBounds = true
+        
+        logInButton.layer.cornerRadius = 17
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
