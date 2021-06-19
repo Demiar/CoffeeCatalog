@@ -32,19 +32,25 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-Qi-RGM">
-                                <rect key="frame" x="165.5" y="561" width="83" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="157" y="561" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.95484322310000003" green="0.82845312360000001" blue="0.67523425820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9sM-EY-Le1"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ggv-X4-Jkf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="Войти">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                    <color key="titleColor" red="0.29440486430000001" green="0.2184086442" blue="0.19136390089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hz9-aC-Gd7"/>
+                                    <segue destination="7PI-5R-mAr" kind="show" id="WrO-Yn-aMW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3P4-xa-L6l">
-                                <rect key="frame" x="153" y="629" width="108" height="30"/>
-                                <state key="normal" title="Забыл пароль?">
-                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="149" y="621" width="116" height="30"/>
+                                <state key="normal" title="Забыли пароль?">
+                                    <color key="titleColor" red="0.74901960784313726" green="0.66274509803921566" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6LX-yl-nBq"/>
@@ -74,6 +80,16 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
         </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="kAD-XM-r6C">
+            <objects>
+                <viewControllerPlaceholder id="7PI-5R-mAr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ib4-Wj-OmS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9k-9R-tw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="94"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="vV0-JY-ixL">
             <objects>
@@ -94,9 +110,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
