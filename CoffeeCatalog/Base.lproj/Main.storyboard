@@ -35,7 +35,7 @@
                                 <rect key="frame" x="157" y="561" width="100" height="40"/>
                                 <color key="backgroundColor" red="0.95484322310000003" green="0.82845312360000001" blue="0.67523425820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="9sM-EY-Le1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="9sM-EY-Le1"/>
                                     <constraint firstAttribute="height" constant="40" id="Ggv-X4-Jkf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
