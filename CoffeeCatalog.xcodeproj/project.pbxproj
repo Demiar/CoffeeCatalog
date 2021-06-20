@@ -10,6 +10,8 @@
 		25E1D995267F56580002212C /* CoffeeType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E1D994267F56580002212C /* CoffeeType.storyboard */; };
 		25E1D99A267F56970002212C /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E1D999267F56970002212C /* CoffeeViewController.swift */; };
 		25E1D99E267F59AC0002212C /* CoffeeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E1D99D267F59AC0002212C /* CoffeeType.swift */; };
+		84078D30267F9645000945DE /* CoffeeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84078D2F267F9645000945DE /* CoffeeDetailsViewController.swift */; };
+		84078D32267F9650000945DE /* CoffeeDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84078D31267F9650000945DE /* CoffeeDetails.storyboard */; };
 		8A42B0EC267DB4C3006D28A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0EB267DB4C3006D28A0 /* AppDelegate.swift */; };
 		8A42B0EE267DB4C3006D28A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0ED267DB4C3006D28A0 /* SceneDelegate.swift */; };
 		8A42B0F0267DB4C3006D28A0 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0EF267DB4C3006D28A0 /* logInViewController.swift */; };
@@ -24,6 +26,8 @@
 		25E1D994267F56580002212C /* CoffeeType.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoffeeType.storyboard; sourceTree = "<group>"; };
 		25E1D999267F56970002212C /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
 		25E1D99D267F59AC0002212C /* CoffeeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeType.swift; sourceTree = "<group>"; };
+		84078D2F267F9645000945DE /* CoffeeDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeDetailsViewController.swift; sourceTree = "<group>"; };
+		84078D31267F9650000945DE /* CoffeeDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoffeeDetails.storyboard; sourceTree = "<group>"; };
 		8A42B0E8267DB4C3006D28A0 /* CoffeeCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A42B0EB267DB4C3006D28A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A42B0ED267DB4C3006D28A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		25E1D997267F56610002212C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				84078D31267F9650000945DE /* CoffeeDetails.storyboard */,
 				25E1D994267F56580002212C /* CoffeeType.storyboard */,
 				8A42B0F1267DB4C3006D28A0 /* Main.storyboard */,
 			);
@@ -59,6 +64,7 @@
 		25E1D998267F56750002212C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				84078D2F267F9645000945DE /* CoffeeDetailsViewController.swift */,
 				8A42B0EF267DB4C3006D28A0 /* logInViewController.swift */,
 				25E1D999267F56970002212C /* CoffeeViewController.swift */,
 			);
@@ -174,6 +180,7 @@
 				8A42B0F8267DB4CA006D28A0 /* LaunchScreen.storyboard in Resources */,
 				8A42B0F5267DB4CA006D28A0 /* Assets.xcassets in Resources */,
 				8A42B106267DF937006D28A0 /* wallpaper.jpg in Resources */,
+				84078D32267F9650000945DE /* CoffeeDetails.storyboard in Resources */,
 				8A42B0F3267DB4C3006D28A0 /* Main.storyboard in Resources */,
 				25E1D995267F56580002212C /* CoffeeType.storyboard in Resources */,
 			);
@@ -187,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A42B100267DE25D006D28A0 /* User.swift in Sources */,
+				84078D30267F9645000945DE /* CoffeeDetailsViewController.swift in Sources */,
 				8A42B0F0267DB4C3006D28A0 /* logInViewController.swift in Sources */,
 				25E1D99A267F56970002212C /* CoffeeViewController.swift in Sources */,
 				25E1D99E267F59AC0002212C /* CoffeeType.swift in Sources */,

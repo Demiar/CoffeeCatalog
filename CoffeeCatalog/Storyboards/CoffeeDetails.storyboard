@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cqA-gf-x5Y">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Coffee Details View Controller-->
+        <scene sceneID="TMh-lL-zTh">
+            <objects>
+                <viewController id="cqA-gf-x5Y" customClass="CoffeeDetailsViewController" customModule="CoffeeCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5mh-B3-7cb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QDK-5F-54L">
+                                <rect key="frame" x="20" y="0.0" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QDK-5F-54L" secondAttribute="height" id="dwl-nj-7ky"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-Ir-XCZ">
+                                <rect key="frame" x="148.66666666666666" y="404" width="116.99999999999997" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Descripion" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnB-a3-Yy9" userLabel="Coffee Descripion Label">
+                                <rect key="frame" x="20" y="438" width="144.33333333333334" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hTQ-Ll-wKM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Skf-Ir-XCZ" firstAttribute="top" secondItem="QDK-5F-54L" secondAttribute="bottom" constant="30" id="2Pi-C4-Dkw"/>
+                            <constraint firstItem="QDK-5F-54L" firstAttribute="leading" secondItem="hTQ-Ll-wKM" secondAttribute="leading" constant="20" id="9Ua-o5-HYE"/>
+                            <constraint firstItem="Skf-Ir-XCZ" firstAttribute="centerX" secondItem="hTQ-Ll-wKM" secondAttribute="centerX" id="UzM-g1-yME"/>
+                            <constraint firstItem="QDK-5F-54L" firstAttribute="top" secondItem="hTQ-Ll-wKM" secondAttribute="top" id="da7-oT-YAI"/>
+                            <constraint firstItem="nnB-a3-Yy9" firstAttribute="leading" secondItem="hTQ-Ll-wKM" secondAttribute="leading" constant="20" id="mRD-Tl-uql"/>
+                            <constraint firstItem="hTQ-Ll-wKM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nnB-a3-Yy9" secondAttribute="trailing" symbolic="YES" id="q0b-wL-l63"/>
+                            <constraint firstItem="nnB-a3-Yy9" firstAttribute="top" secondItem="Skf-Ir-XCZ" secondAttribute="bottom" constant="10" id="uIw-oJ-eJE"/>
+                            <constraint firstItem="QDK-5F-54L" firstAttribute="centerX" secondItem="hTQ-Ll-wKM" secondAttribute="centerX" id="vVc-5Y-XcS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeeDescriptionLabel" destination="nnB-a3-Yy9" id="gfa-v3-N9e"/>
+                        <outlet property="coffeeImageView" destination="QDK-5F-54L" id="Br9-34-XXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilg-nD-D2G" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
