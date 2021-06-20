@@ -16,7 +16,7 @@ struct CoffeeType {
 extension CoffeeType {
     static func getCoffeeList() ->[CoffeeType] {
         [
-            CoffeeType(coffeeName: "Americano", shortDescription: "Классический эспрессо с горячей водой"),
+            CoffeeType(coffeeName: "Americano", shortDescription: "  Классический эспрессо с горячей водой"),
             CoffeeType(coffeeName: "Cappuccino", shortDescription: "Эспрессо с добавлением в него подогретого молока"),
             CoffeeType(coffeeName: "Espresso", shortDescription: "Крепкий кофе"),
             CoffeeType(coffeeName: "Frappe", shortDescription: "Покрытый молочной пеной холодный кофейный напиток"),
