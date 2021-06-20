@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84672725267F4044007F5CB1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84672724267F4044007F5CB1 /* Model.swift */; };
 		8A42B0EC267DB4C3006D28A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0EB267DB4C3006D28A0 /* AppDelegate.swift */; };
 		8A42B0EE267DB4C3006D28A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0ED267DB4C3006D28A0 /* SceneDelegate.swift */; };
 		8A42B0F0267DB4C3006D28A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42B0EF267DB4C3006D28A0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84672724267F4044007F5CB1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		8A42B0E8267DB4C3006D28A0 /* CoffeeCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A42B0EB267DB4C3006D28A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A42B0ED267DB4C3006D28A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				8A42B0F4267DB4CA006D28A0 /* Assets.xcassets */,
 				8A42B0F6267DB4CA006D28A0 /* LaunchScreen.storyboard */,
 				8A42B0F9267DB4CA006D28A0 /* Info.plist */,
+				84672724267F4044007F5CB1 /* Model.swift */,
 			);
 			path = CoffeeCatalog;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				8A42B0F0267DB4C3006D28A0 /* ViewController.swift in Sources */,
 				8A42B0EC267DB4C3006D28A0 /* AppDelegate.swift in Sources */,
 				8A42B0EE267DB4C3006D28A0 /* SceneDelegate.swift in Sources */,
+				84672725267F4044007F5CB1 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				INFOPLIST_FILE = CoffeeCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4A5GSXMSS8;
 				INFOPLIST_FILE = CoffeeCatalog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
