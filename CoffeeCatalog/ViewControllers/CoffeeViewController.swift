@@ -18,7 +18,7 @@ class CoffeeViewController: UIViewController {
         
         coffeeTableView.delegate = self
         coffeeTableView.dataSource = self
-        coffeeTableView.rowHeight = 50
+        coffeeTableView.rowHeight = 55
     }
     
 }
