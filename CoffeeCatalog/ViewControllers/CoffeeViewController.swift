@@ -38,13 +38,19 @@ extension CoffeeViewController: UITableViewDataSource {
         
         let coffee = coffeeList[indexPath.row]
         
-        var content = cell.defaultContentConfiguration()
+        //var content = cell.defaultContentConfiguration()
         
-        content.text = coffee.coffeeName
-        content.secondaryText = coffee.shortDescription
-        content.image = UIImage(named: coffee.coffeeName)
+//        content.text = coffee.coffeeName
+//        content.secondaryText = coffee.shortDescription
+//        content.image = UIImage(named: coffee.coffeeName)
+//
+//        cell.contentConfiguration = content
         
-        cell.contentConfiguration = content
+        cell.textLabel?.text = coffee.coffeeName
+        cell.detailTextLabel?.text = coffee.shortDescription
+        cell.imageView?.image = UIImage(named: coffee.coffeeName)
+        
+        //cell.contentConfiguration = content
         
         return cell
     }
