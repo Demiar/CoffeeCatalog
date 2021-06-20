@@ -9,9 +9,9 @@ import UIKit
 
 class CoffeeDetailsViewController: UIViewController {
 
-    
     @IBOutlet weak var coffeeImageView: UIImageView!
     @IBOutlet weak var coffeeDescriptionLabel: UILabel!
+
     
     var coffee: CoffeeType?
     
@@ -29,28 +29,15 @@ class CoffeeDetailsViewController: UIViewController {
 extension CoffeeDetailsViewController {
     
     private func updateTableView() {
-        navigationController?.title = coffee?.coffeeName
         coffeeImageView.image = UIImage(named: coffee?.coffeeName ?? "")
-        //coffeeDescriptionLabel.text = coffee.fullDescription
+        
         coffeeDescriptionLabel.text = coffee?.shortDescription
         coffeeDescriptionLabel.numberOfLines = 0
-        //updateLabelFrame()
+        //coffeeDescriptionLabel.font
+        //Noteworthy Bold 75.0
+        title = coffee?.coffeeName
     }
-    
-    private func updateLabelFrame() {
-        coffeeDescriptionLabel.text = testText // coffee.fullDescription
-        coffeeDescriptionLabel.numberOfLines = 0
-        
-        var maximumLabelSize: CGSize = CGSize(width: view.layer.frame.width - 20, height: 40)
-        var expectedLabelSize: CGSize = coffeeDescriptionLabel.sizeThatFits(maximumLabelSize)
-        
-        // create a frame that is filled with the UILabel frame data
-        var newFrame: CGRect = coffeeDescriptionLabel.frame
-        // resizing the frame to calculated size
-        newFrame.size.height = expectedLabelSize.height
-        // put calculated frame into UILabel frame
-        coffeeDescriptionLabel.frame = newFrame
-    }
+
     
 }
 

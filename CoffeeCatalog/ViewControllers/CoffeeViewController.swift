@@ -19,6 +19,8 @@ class CoffeeViewController: UIViewController {
         coffeeTableView.delegate = self
         coffeeTableView.dataSource = self
         coffeeTableView.rowHeight = 55
+        
+        title = "Coffee List"
     }
     
 }
@@ -52,6 +54,14 @@ extension CoffeeViewController: UITableViewDataSource {
 
 extension CoffeeViewController {
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailViewController = segue.destination as? CoffeeDetailsViewController,
+              let indexPath = coffeeTableView.indexPathForSelectedRow
+              else { return }
+        
+        let coffeeType = coffeeList[indexPath.row]
+        detailViewController.coffee = coffeeType
+        
+    }
     
 }

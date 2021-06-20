@@ -22,15 +22,15 @@
                                     <constraint firstAttribute="width" secondItem="QDK-5F-54L" secondAttribute="height" id="dwl-nj-7ky"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-Ir-XCZ">
-                                <rect key="frame" x="148.66666666666666" y="404" width="116.99999999999997" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О кофе" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skf-Ir-XCZ">
+                                <rect key="frame" x="174.66666666666666" y="394" width="65" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee Descripion" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnB-a3-Yy9" userLabel="Coffee Descripion Label">
-                                <rect key="frame" x="20" y="438" width="144.33333333333334" height="21.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-ot-8Cl">
+                                <rect key="frame" x="20" y="446" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,19 +38,19 @@
                         <viewLayoutGuide key="safeArea" id="hTQ-Ll-wKM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Skf-Ir-XCZ" firstAttribute="top" secondItem="QDK-5F-54L" secondAttribute="bottom" constant="30" id="2Pi-C4-Dkw"/>
+                            <constraint firstItem="hTQ-Ll-wKM" firstAttribute="trailing" secondItem="yhD-ot-8Cl" secondAttribute="trailing" constant="20" id="0HC-X5-j0H"/>
+                            <constraint firstItem="Skf-Ir-XCZ" firstAttribute="top" secondItem="QDK-5F-54L" secondAttribute="bottom" constant="20" id="2Pi-C4-Dkw"/>
                             <constraint firstItem="QDK-5F-54L" firstAttribute="leading" secondItem="hTQ-Ll-wKM" secondAttribute="leading" constant="20" id="9Ua-o5-HYE"/>
+                            <constraint firstItem="yhD-ot-8Cl" firstAttribute="top" secondItem="Skf-Ir-XCZ" secondAttribute="bottom" constant="20" id="A7z-w8-kso"/>
+                            <constraint firstItem="yhD-ot-8Cl" firstAttribute="leading" secondItem="hTQ-Ll-wKM" secondAttribute="leading" constant="20" id="Iwo-5b-JNE"/>
                             <constraint firstItem="Skf-Ir-XCZ" firstAttribute="centerX" secondItem="hTQ-Ll-wKM" secondAttribute="centerX" id="UzM-g1-yME"/>
                             <constraint firstItem="QDK-5F-54L" firstAttribute="top" secondItem="hTQ-Ll-wKM" secondAttribute="top" id="da7-oT-YAI"/>
-                            <constraint firstItem="nnB-a3-Yy9" firstAttribute="leading" secondItem="hTQ-Ll-wKM" secondAttribute="leading" constant="20" id="mRD-Tl-uql"/>
-                            <constraint firstItem="hTQ-Ll-wKM" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nnB-a3-Yy9" secondAttribute="trailing" symbolic="YES" id="q0b-wL-l63"/>
-                            <constraint firstItem="nnB-a3-Yy9" firstAttribute="top" secondItem="Skf-Ir-XCZ" secondAttribute="bottom" constant="10" id="uIw-oJ-eJE"/>
                             <constraint firstItem="QDK-5F-54L" firstAttribute="centerX" secondItem="hTQ-Ll-wKM" secondAttribute="centerX" id="vVc-5Y-XcS"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="coffeeDescriptionLabel" destination="nnB-a3-Yy9" id="gfa-v3-N9e"/>
-                        <outlet property="coffeeImageView" destination="QDK-5F-54L" id="Br9-34-XXb"/>
+                        <outlet property="coffeeDescriptionLabel" destination="yhD-ot-8Cl" id="syF-g4-Uud"/>
+                        <outlet property="coffeeImageView" destination="QDK-5F-54L" id="OfW-y9-LIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ilg-nD-D2G" sceneMemberID="firstResponder"/>

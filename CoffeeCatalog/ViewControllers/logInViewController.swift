@@ -28,6 +28,8 @@ class logInViewController: UIViewController {
         passwordTF.layer.masksToBounds = true
         
         logInButton.layer.cornerRadius = 17
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
